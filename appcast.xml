@@ -2,22 +2,21 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>QiaOrbit</title>
-    <link>https://github.com/ovralab/QiaOrbit/releases/latest/download/appcast.xml</link>
+    <link>https://raw.githubusercontent.com/ovralab/QiaOrbit/main/appcast.xml</link>
     <description>QiaOrbit updates</description>
     <language>zh-CN</language>
     <item>
       <title>1.0.4</title>
-      <pubDate>Sun, 15 Nov 2026 11:49:50 GMT</pubDate>
+      <pubDate>Sun, 15 Nov 2026 12:34:39 GMT</pubDate>
       <sparkle:version>38</sparkle:version>
       <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <sparkle:releaseNotesLink>https://github.com/ovralab/QiaOrbit/releases/tag/v1.0.2</sparkle:releaseNotesLink>
-      <description><![CDATA[首个支持自动更新的版本。]]></description>
-<enclosure
-  url="https://github.com/ovralab/QiaOrbit/releases/download/v1.0.2/QiaOrbit-1.0.4.dmg"
-  length="79274992"
-  type="application/octet-stream"
-  sparkle:edSignature="oJ388JISbG3pxfyq3PqtdQUesNdC9N1PxEkdirLcMErJAEF2yogUpbvZeAsm33kyCVzmGDr2CnB5PMzMyUCnDg==" />
+      <description><![CDATA[修复更新检查问题。]]></description>
+      <enclosure
+        url="https://github.com/ovralab/QiaOrbit/releases/download/v1.0.2/QiaOrbit-1.0.4.dmg"
+        length="79274992"
+        type="application/octet-stream"
+        sparkle:edSignature="oJ388JISbG3pxfyq3PqtdQUesNdC9N1PxEkdirLcMErJAEF2yogUpbvZeAsm33kyCVzmGDr2CnB5PMzMyUCnDg==" />
     </item>
   </channel>
 </rss>
