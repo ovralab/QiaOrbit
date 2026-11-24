@@ -13,8 +13,8 @@
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/ovralab/QiaOrbit/releases/download/v1.0.1/QiaOrbit-1.0.1.dmg"
         length="77673009" 
-        type="application/octet-stream" s
-        parkle:edSignature="bqS9akD66ywqAKBxMweQOBMbHM7r/EV/whSK2MjTW6HtsrGovxGgqRDPWUmgVB0/eAvdSO07nD6YIMR8pGAgBg=="/>
+        type="application/octet-stream" 
+        sparkle:edSignature="bqS9akD66ywqAKBxMweQOBMbHM7r/EV/whSK2MjTW6HtsrGovxGgqRDPWUmgVB0/eAvdSO07nD6YIMR8pGAgBg=="/>
     </item>
   </channel>
 </rss>
