@@ -1,34 +1,31 @@
-<p align="center"><img src="assets/icon.png" width="88" alt="QiaOrbit icon"></p>
+# QiaOrbit
 
-<h1 align="center">QiaOrbit</h1>
-<p align="center">A macOS proxy client for managing profiles, routing traffic, and diagnosing connections.</p>
-<p align="center"><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
-<p align="center"><a href="https://minovra.app/products/qiaorbit">Official website</a> · <a href="https://github.com/ovralab/QiaOrbit/releases/latest">Download</a> · <a href="mailto:support@minovra.app">Support</a></p>
+**Decide how your Mac’s traffic is routed. See what happens to each connection.**
 
-![QiaOrbit dashboard showing connection status, outbound modes, network diagnostics, and subscription usage](assets/screenshots/dashboard.png)
+QiaOrbit brings proxy profiles, traffic rules, and connection diagnostics into one macOS app. Import your own configuration, choose a node, and see which rules matched when you need to troubleshoot a connection.
 
-## Features
+[Download for Apple Silicon](https://github.com/ovralab/QiaOrbit/releases/latest) · [Product page](https://minovra.app/products/qiaorbit) · [简体中文](README.zh-CN.md)
 
-- **Connection modes.** Use System Proxy for apps that respect system proxy settings, or enable the virtual network interface (TUN) to route system traffic.
-- **Traffic rules.** Choose Smart Routing, Global Proxy, or Direct mode. Use built-in rules or define rules for domains, IP addresses, and apps.
-- **Profiles and nodes.** Import a ClashMeta / Mihomo subscription or a local configuration file. Switch nodes and compare their latency and stability.
-- **Connection diagnostics.** Check DNS resolution, node reachability, proxy service status, and routing. Review recent connections to see which rules matched.
+Requires macOS 14 or later.
 
-<details>
-<summary>View another dashboard screenshot</summary>
+## The dashboard
 
-![QiaOrbit dashboard showing traffic rule counts and subscription usage](assets/screenshots/dashboard-rules.png)
+![QiaOrbit dashboard with connection controls, network diagnostics, and subscription usage](assets/screenshots/dashboard.png)
 
-</details>
+From the dashboard, you can switch nodes, check your outbound IP and traffic rates, and see whether DNS, the selected node, and the proxy service are working.
 
-## Download and installation
+## From profile to connection
 
-The macOS build requires **macOS 14 or later** and an **Apple Silicon Mac**. Get the DMG from [GitHub Releases](https://github.com/ovralab/QiaOrbit/releases/latest) or visit the [official product page](https://minovra.app/products/qiaorbit).
+1. **Add a profile.** Open the DMG, drag QiaOrbit into Applications, and import a ClashMeta / Mihomo subscription or a local configuration file.
+2. **Choose what to route.** Use System Proxy for apps that follow macOS proxy settings. To route system traffic with the virtual network interface (TUN), enable it and approve the network extension when prompted.
+3. **Choose where traffic goes.** Use Smart Routing to apply built-in and custom rules for domains, IP addresses, or apps. Switch to Global Proxy or Direct when you want a single policy.
 
-1. Open the DMG and drag QiaOrbit into Applications.
-2. Open QiaOrbit, import a profile or subscription, and choose a node.
-3. If you enable the virtual network interface, approve the QiaOrbit network extension when macOS prompts you.
+## When a connection isn’t working
 
-QiaOrbit is a commercial client. Bring your own profiles, proxy nodes, or subscriptions.
+Compare node latency and stability, check the network diagnostics, or open Connection History to see which rule matched. The dashboard also shows traffic rule counts and subscription usage when available.
 
-For help or feedback, [contact Minovra support](mailto:support@minovra.app). Include your macOS and QiaOrbit versions and a brief description of the issue.
+<a href="assets/screenshots/dashboard-rules.png"><img src="assets/screenshots/dashboard-rules.png" width="620" alt="QiaOrbit dashboard showing traffic rule counts and subscription usage"></a>
+
+QiaOrbit is a commercial app. You supply your own profiles, proxy nodes, or subscriptions.
+
+[Contact Minovra support](mailto:support@minovra.app) for help or feedback. Include your macOS and QiaOrbit versions and a brief description of the issue.

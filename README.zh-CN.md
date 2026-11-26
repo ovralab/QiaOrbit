@@ -1,34 +1,31 @@
-<p align="center"><img src="assets/icon.png" width="88" alt="QiaOrbit 图标"></p>
+# QiaOrbit
 
-<h1 align="center">QiaOrbit</h1>
-<p align="center">面向 macOS 的代理客户端，用于管理配置、按规则分流和排查连接问题。</p>
-<p align="center"><a href="README.md">English</a> · <strong>简体中文</strong></p>
-<p align="center"><a href="https://minovra.app/zh-CN/products/qiaorbit">官网</a> · <a href="https://github.com/ovralab/QiaOrbit/releases/latest">下载</a> · <a href="mailto:support@minovra.app">技术支持</a></p>
+**决定 Mac 上的流量走哪条线路，也能查到每条连接命中了什么规则。**
 
-![QiaOrbit 控制台展示连接状态、出站模式、网络诊断和订阅用量](assets/screenshots/dashboard.png)
+QiaOrbit 是一款 macOS 代理客户端，把代理配置、流量规则和连接诊断放在同一个应用里。导入配置、选好节点后即可连接。遇到问题时，可以从控制台和连接记录入手排查。
 
-## 主要功能
+[下载 Apple 芯片版](https://github.com/ovralab/QiaOrbit/releases/latest) · [官网产品页](https://minovra.app/zh-CN/products/qiaorbit) · [English](README.md)
 
-- **连接方式。** 使用系统代理接管遵循系统代理设置的应用，或开启虚拟网卡（TUN）接管系统流量。
-- **流量规则。** 支持智能分流、全局代理和全局直连。可使用内置规则，也可按域名、IP 或应用自定义规则。
-- **配置和节点。** 支持导入 ClashMeta / Mihomo 订阅和本地配置文件，可切换节点并比较延迟与稳定性。
-- **连接诊断。** 检查 DNS 解析、节点连通性、代理服务与分流状态，并在连接记录中查看命中的规则。
+需要 macOS 14 或更高版本。
 
-<details>
-<summary>查看另一张控制台截图</summary>
+## 控制台
 
-![QiaOrbit 控制台展示流量规则统计和订阅用量](assets/screenshots/dashboard-rules.png)
+![QiaOrbit 控制台展示连接开关、网络诊断和订阅用量](assets/screenshots/dashboard.png)
 
-</details>
+你可以在控制台切换节点，查看出站 IP 和实时速率，并检查 DNS、节点连通性和代理服务状态。
 
-## 下载与安装
+## 从导入配置到开始连接
 
-需要 **macOS 14 或更高版本**及搭载 **Apple 芯片**的 Mac。可从 [GitHub Releases](https://github.com/ovralab/QiaOrbit/releases/latest) 获取 DMG，或访问 [官网产品页](https://minovra.app/zh-CN/products/qiaorbit)。
+1. **导入配置。** 打开 DMG，将 QiaOrbit 拖入「应用程序」，再导入 ClashMeta / Mihomo 订阅或本地配置文件。
+2. **选择接管范围。** 系统代理适用于遵循 macOS 代理设置的应用。如果要接管系统流量，请启用虚拟网卡（TUN），并按系统提示允许网络扩展。
+3. **决定流量去向。** 智能分流会按内置规则和自定义规则处理流量。规则可按域名、IP 或应用设置，也可以直接切换为全局代理或全局直连。
 
-1. 打开 DMG，将 QiaOrbit 拖入「应用程序」。
-2. 打开 QiaOrbit，导入配置或订阅，然后选择节点。
-3. 如需使用虚拟网卡，请在 macOS 提示时允许 QiaOrbit 网络扩展。
+## 连接不顺时怎么查
 
-QiaOrbit 是商业客户端，配置、代理节点或订阅需自行准备。
+先比较节点的延迟和稳定性，或查看网络诊断。如果只有某个网站或应用受影响，可以打开「连接记录」，看看相关连接命中了哪条规则。控制台也能查看规则统计和订阅用量。
+
+<a href="assets/screenshots/dashboard-rules.png"><img src="assets/screenshots/dashboard-rules.png" width="620" alt="QiaOrbit 控制台展示流量规则统计和订阅用量"></a>
+
+QiaOrbit 是商业软件，配置、代理节点或订阅需自行准备。
 
 如需帮助或反馈问题，请[联系 Minovra 支持](mailto:support@minovra.app)，并附上 macOS 版本、QiaOrbit 版本和问题描述。
