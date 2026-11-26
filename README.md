@@ -1,121 +1,34 @@
-# QiaOrbit
+<p align="center"><img src="assets/icon.png" width="88" alt="QiaOrbit icon"></p>
 
-> macOS 上的一键分流工具。打开就能用，不用懂代理，也不用写配置文件。
+<h1 align="center">QiaOrbit</h1>
+<p align="center">A macOS proxy client for managing profiles, routing traffic, and diagnosing connections.</p>
+<p align="center"><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
+<p align="center"><a href="https://minovra.app/products/qiaorbit">Official website</a> · <a href="https://github.com/ovralab/QiaOrbit/releases/latest">Download</a> · <a href="mailto:support@minovra.app">Support</a></p>
 
-| | |
-| :-- | :-- |
-| **当前版本** | 1.0.2 |
-| **系统要求** | macOS 14.0 及以上 · Apple Silicon |
-| **安装包大小** | 76 MB |
-| **下载** | [GitHub Releases](https://github.com/ovralab/QiaOrbit/releases/latest) · [官网](https://minovra.app/zh-CN/downloads) |
+![QiaOrbit dashboard showing connection status, outbound modes, network diagnostics, and subscription usage](assets/screenshots/dashboard.png)
 
----
+## Features
 
-## 一句话
+- **Connection modes.** Use System Proxy for apps that respect system proxy settings, or enable the virtual network interface (TUN) to route system traffic.
+- **Traffic rules.** Choose Smart Routing, Global Proxy, or Direct mode. Use built-in rules or define rules for domains, IP addresses, and apps.
+- **Profiles and nodes.** Import a ClashMeta / Mihomo subscription or a local configuration file. Switch nodes and compare their latency and stability.
+- **Connection diagnostics.** Check DNS resolution, node reachability, proxy service status, and routing. Review recent connections to see which rules matched.
 
-国内的网站直连、国外的走代理——这件事本来要手动切来切去，QiaOrbit 让它变成默认行为。
+<details>
+<summary>View another dashboard screenshot</summary>
 
-打开开关，剩下的它自己处理。
+![QiaOrbit dashboard showing traffic rule counts and subscription usage](assets/screenshots/dashboard-rules.png)
 
-## 适合谁
+</details>
 
-**不想折腾的人**
-装了就能用。没有端口、没有规则文件、没有配置文件要改。
+## Download and installation
 
-**分不清"该不该挂代理"的人**
-每个请求它自己判断。你不用记哪个网站要走哪条线路。
+The macOS build requires **macOS 14 or later** and an **Apple Silicon Mac**. Get the DMG from [GitHub Releases](https://github.com/ovralab/QiaOrbit/releases/latest) or visit the [official product page](https://minovra.app/products/qiaorbit).
 
-**在意稳定性的人**
-连接断了会自己恢复；出了问题，连接记录里能直接看到是哪条规则、走的哪个节点。
+1. Open the DMG and drag QiaOrbit into Applications.
+2. Open QiaOrbit, import a profile or subscription, and choose a node.
+3. If you enable the virtual network interface, approve the QiaOrbit network extension when macOS prompts you.
 
-## 它怎么做
+QiaOrbit is a commercial client. Bring your own profiles, proxy nodes, or subscriptions.
 
-| 你遇到的情况 | QiaOrbit 的处理 |
-| :-- | :-- |
-| 打开国内网站，结果绕到国外 | 按域名和 IP 判断，国内直接连 |
-| 开了代理，某些 App 不走 | 全局接管，所有应用一起生效 |
-| 换了网络环境，连接失效 | 自动感知网络变化并重连 |
-| 不知道是哪出了问题 | 连接记录列出每条请求命中的规则与节点 |
-| 节点变慢或挂掉 | 批量测速，标记不可用节点 |
-
-## 功能
-
-**连接**
-
-- 一键开关，开箱即用
-- 系统代理与全局接管两种模式
-- 网络切换后自动恢复
-
-**分流**
-
-- 内置常用分流规则，无需手工维护
-- 支持自定义域名、IP、应用级别的策略
-- 订阅导入后自动同步节点
-
-**观察**
-
-- 每条连接实时显示命中的规则与出口
-- 节点延迟批量测试
-- 连接失败时给出具体原因，而不是只显示"连接失败"
-
-## 下载
-
-从 [GitHub Releases](https://github.com/ovralab/QiaOrbit/releases/latest) 下载最新版本；如果你不确定该下哪个，
-打开 [官网下载页](https://minovra.app/zh-CN/downloads)，它会给出对应安装包。
-
-| 平台 | 安装包 | 说明 |
-| :-- | :-- | :-- |
-| macOS 14 及以上 | `QiaOrbit-x.y.z.dmg`（Apple Silicon） | 下载后拖进「应用程序」 |
-
-## 安装
-
-1. 双击下载的 `dmg`
-2. 把 `QiaOrbit` 拖进「应用程序」
-3. 首次打开时允许网络扩展：系统设置 → 通用 → 登录项与扩展 → 网络扩展
-4. 导入订阅，打开开关
-
-安装包已通过 Apple Developer ID 签名与公证，首次打开不会被 Gatekeeper 拦截。
-
-## 关于安全
-
-更新包从官方更新源获取，与本仓库 Releases 中的文件一致。三道校验各管一段：
-
-| 校验 | 由谁提供 | 拦住了什么 |
-| :-- | :-- | :-- |
-| Apple 签名 + 公证 | Apple | 被篡改或来源不明的程序 |
-| EdDSA 签名 | 你的产品密钥（仅作者持有） | 更新包在传输中被替换 |
-| SHA-256 | 每个 Release 说明 | 下载不完整或镜像不一致 |
-
-EdDSA 校验失败时，客户端会拒绝安装，而不是继续。
-
-## 校验下载
-
-每个 Release 的说明里都会给出安装包的 SHA-256：
-
-```bash
-shasum -a 256 QiaOrbit-1.0.2.dmg
-```
-
-和页面上的值一致，即可确认文件完整。
-
-## 自动更新
-
-启动时自动检查新版本，也可以在菜单中选择「检查更新…」。
-
-- 更新包与本仓库 Releases 中的文件完全一致
-- 安装前校验 EdDSA 签名，通过后才安装
-- 可选「跳过此版本」，不用被迫升级
-
-## 反馈
-
-- 使用问题、功能建议：[提交工单](https://minovra.app/zh-CN/account/tickets)
-- 邮件：[support@minovra.app](mailto:support@minovra.app)
-- 反馈时请附上：系统版本、QiaOrbit 版本、「连接记录」中的相关日志
-
-## 许可
-
-商业软件，一次性授权。安装包可自由下载与试用，授权后解锁全部功能。
-
----
-
-© 2026 Minovra. 保留所有权利。
+For help or feedback, [contact Minovra support](mailto:support@minovra.app). Include your macOS and QiaOrbit versions and a brief description of the issue.
