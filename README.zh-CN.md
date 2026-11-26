@@ -24,7 +24,7 @@ QiaOrbit 是一款 macOS 代理客户端，把代理配置、流量规则和连�
 
 先比较节点的延迟和稳定性，或查看网络诊断。如果只有某个网站或应用受影响，可以打开「连接记录」，看看相关连接命中了哪条规则。控制台也能查看规则统计和订阅用量。
 
-<a href="assets/screenshots/dashboard-rules.png"><img src="assets/screenshots/dashboard-rules.png" width="620" alt="QiaOrbit 控制台展示流量规则统计和订阅用量"></a>
+<a href="assets/screenshots/history-zh-CN.png"><img src="assets/screenshots/history-zh-CN.png" width="620" alt="QiaOrbit 连接记录展示连接方式和命中依据"></a>
 
 QiaOrbit 是商业软件，配置、代理节点或订阅需自行准备。
 

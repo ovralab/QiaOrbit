@@ -24,7 +24,7 @@ From the dashboard, you can switch nodes, check your outbound IP and traffic rat
 
 Compare node latency and stability, check the network diagnostics, or open Connection History to see which rule matched. The dashboard also shows traffic rule counts and subscription usage when available.
 
-<a href="assets/screenshots/dashboard-rules.png"><img src="assets/screenshots/dashboard-rules.png" width="620" alt="QiaOrbit dashboard showing traffic rule counts and subscription usage"></a>
+<a href="assets/screenshots/history-en.png"><img src="assets/screenshots/history-en.png" width="620" alt="QiaOrbit History showing connection methods and matched rules"></a>
 
 QiaOrbit is a commercial app. You supply your own profiles, proxy nodes, or subscriptions.
 
