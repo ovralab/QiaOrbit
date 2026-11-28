@@ -1,35 +1,36 @@
-# QiaOrbit
+# <img src="assets/icon.png" width="44" height="44" alt=""> QiaOrbit
 
-**设置 Mac 的流量分流，查清每条连接走了哪里。**
+**原生 macOS 代理与分流客户端。**
 
-QiaOrbit 把配置管理、流量规则和网络诊断放在同一个 macOS 应用里。
+<a href="https://github.com/ovralab/QiaOrbit/releases/latest"><img src="assets/buttons/download-zh.png" width="148" height="36" alt="下载 macOS 版"></a>&nbsp; <a href="https://minovra.app/zh-CN/products/qiaorbit"><img src="assets/buttons/website-zh.png" width="112" height="36" alt="官方网站"></a>
 
-[![下载 macOS 版](https://img.shields.io/badge/%E4%B8%8B%E8%BD%BD%20macOS%20%E7%89%88-0059C7?style=for-the-badge)](https://github.com/ovralab/QiaOrbit/releases/latest)
-[![官方网站](https://img.shields.io/badge/%E5%AE%98%E6%96%B9%E7%BD%91%E7%AB%99-384657?style=for-the-badge)](https://minovra.app/zh-CN/products/qiaorbit)
+macOS 14 或更高版本 · Apple 芯片 · [English](README.md)
 
-macOS 14 或更高版本 · Apple 芯片 | [English](README.md)
+![QiaOrbit 控制台展示连接开关、流量和网络诊断](assets/screenshots/dashboard.png)
 
-![QiaOrbit 控制台展示节点选择、流量和网络诊断](assets/screenshots/dashboard.png)
+## 核心功能
 
-## 查清每条连接的去向
+- **按规则分流**：按域名、IP 或应用设置直连、代理或拦截规则。
+- **两种接管方式**：对遵循 macOS 代理设置的应用使用系统代理，也可开启虚拟网卡（TUN）接管系统流量。
+- **节点检测与切换**：比较节点的延迟和稳定性，再选择合适的节点。
+- **连接记录**：查看已记录连接的实际走向和命中的规则。
 
-打开「连接记录」，就能看到访问是直连、走代理还是被拦截，以及命中的规则。
+## 应用规格
+
+| 项目 | 说明 |
+| --- | --- |
+| 界面 | 使用 SwiftUI 构建的原生 macOS 界面 |
+| 下载大小 | v1.0.1 DMG 约 78 MB |
+| 签名与公证 | Developer ID 签名，Apple 公证 |
+
+## 查看实际连接走向
 
 [![连接记录展示直连、代理和命中的规则](assets/screenshots/history-zh-CN.png)](assets/screenshots/history-zh-CN.png)
 
-**按需设置分流**
-导入 ClashMeta / Mihomo 订阅或本地配置，可按域名、IP 或应用设置规则。
-
-**选择接管方式**
-系统代理适用于遵循 macOS 代理设置的应用。需要接管系统流量时，可开启虚拟网卡（TUN）。
-
-**比较节点质量**
-比较节点的延迟和稳定性，并在控制台检查 DNS 和节点连通性。
-
 ## 安装与使用
 
-1. 下载 DMG，将 QiaOrbit 拖入「应用程序」。
-2. 打开 QiaOrbit，导入配置并选择节点。
+1. 打开 DMG，将 QiaOrbit 拖入「应用程序」。
+2. 导入 ClashMeta / Mihomo 订阅或本地配置，再选择节点。
 3. 如需使用虚拟网卡，请按 macOS 提示允许网络扩展。
 
-QiaOrbit 是商业软件，配置、代理节点或订阅需自行准备。 [联系技术支持](mailto:support@minovra.app).
+QiaOrbit 是商业软件，配置、代理节点或订阅需自行准备。[联系技术支持](mailto:support@minovra.app)。
