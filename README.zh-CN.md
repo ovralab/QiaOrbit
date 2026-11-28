@@ -16,7 +16,7 @@
 
 <img src="https://img.shields.io/github/v/release/ovralab/QiaOrbit?label=%E6%9C%80%E6%96%B0%E7%89%88&color=0066FF" alt="最新版"> · [English](README.md)
 
-![控制台：连接状态、实时速率、网络诊断与分流策略](assets/screenshots/dashboard.png)
+<img src="assets/screenshots/dashboard.png" width="820" alt="控制台：连接状态、实时速率、网络诊断与分流策略">
 
 ---
 
@@ -45,8 +45,9 @@
 左：规则编辑，直连 / 代理 / 拦截。右：连接记录，逐条显示命中的规则。
 
 <p>
-  <img src="assets/screenshots/dashboard-rules.png" width="49%" alt="规则编辑">
-  <img src="assets/screenshots/history-zh-CN.png" width="49%" alt="连接记录">
+  <img src="assets/screenshots/rules-zh-CN.png" width="47%" alt="流量规则：直连 / 代理 / 拦截">
+  &nbsp;
+  <img src="assets/screenshots/history-zh-CN.png" width="47%" alt="连接记录：逐条显示命中的规则">
 </p>
 
 ---
