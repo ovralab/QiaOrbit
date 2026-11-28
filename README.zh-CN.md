@@ -1,5 +1,5 @@
 <!-- 品牌区：两枚图片各自独立缩放，只改 height（或 width）都不会变形 -->
-<h1><img src="assets/icon.png" height="44" alt="">&nbsp;<img src="assets/wordmark.png" height="30" alt="QiaOrbit"></h1>
+<h1><img src="assets/icon.png" height="44" alt="">&nbsp;<img src="assets/wordmark.png" height="35" alt="QiaOrbit"></h1>
 
 ### 连接更简单，流量有去向。
 
