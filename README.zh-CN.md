@@ -4,7 +4,7 @@
 
 为 macOS 打造的原生代理客户端，把配置、分流和诊断放进同一个窗口。
 
-<a href="https://github.com/ovralab/QiaOrbit/releases/latest"><img src="assets/buttons/download-zh.png" width="178" height="36" alt="下载 macOS 版"></a>&nbsp; <a href="https://minovra.app/products/qiaorbit"><img src="assets/buttons/website-zh.png" width="130" height="36" alt="官方网站"></a>
+<a href="https://github.com/ovralab/QiaOrbit/releases/latest"><img src="assets/buttons/download-zh.png" width="182" height="36" alt="下载 macOS 版"></a>&nbsp; <a href="https://minovra.app/products/qiaorbit"><img src="assets/buttons/website-zh.png" width="132" height="36" alt="官方网站"></a>
 
 <p>
   <img src="https://img.shields.io/badge/macOS-14%2B-0066FF" alt="macOS 14+">
@@ -14,7 +14,7 @@
   <img src="https://img.shields.io/badge/Apple-公证-2EA44F" alt="Notarized">
 </p>
 
-<img src="https://img.shields.io/github/v/release/ovralab/QiaOrbit?label=%E6%9C%80%E6%96%B0%E7%89%88&color=0066FF" alt="最新版"> · [English](README.md)
+<a href="https://github.com/ovralab/QiaOrbit/releases/latest"><img src="https://img.shields.io/github/v/release/ovralab/QiaOrbit?label=%E6%9C%80%E6%96%B0%E7%89%88&color=0066FF" alt="最新版"></a>&nbsp;<a href="README.md"><img src="https://img.shields.io/badge/English-README-6E7781" alt="English"></a>
 
 <img src="assets/screenshots/dashboard.png" width="820" alt="控制台：连接状态、实时速率、网络诊断与分流策略">
 
@@ -30,13 +30,13 @@
 
 ## 功能一览
 
-| 模块 | 说明 |
+| 页面 | 能做什么 |
 |---|---|
-| **分流** | 我的规则、应用规则、AI 服务、常用服务、其他流量五层。改规则热生效，不用断开连接。 |
-| **配置** | 支持 ClashMeta / Mihomo 订阅与本地 YAML、链接导入、二维码导入、按配置自动更新、用量与到期提醒。 |
-| **节点** | 按地区分组，延迟分三档着色，稳定性多次采样，另有 AI 可达性一列。 |
-| **记录** | 每次连接都记录应用、目标、命中规则与连接方式；支持导出 CSV 与保留天数设置。 |
-| **隐私** | 无需注册账号；配置与记录只保存在本机；诊断不会上传你的配置。 |
+| **控制台** | 一键连接与断开、实时上下行、出站 IP、订阅用量、分流策略概览；网络诊断把 DNS、节点、代理、分流四项状态摆在一屏。 |
+| **配置管理** | 导入 ClashMeta / Mihomo 订阅或本地 YAML，支持链接与二维码导入、按配置自动更新，并显示用量、到期与安全检查结果。 |
+| **代理节点** | 按地区分组，延迟分三档着色，稳定性多次采样，附带 AI 可达性一列；支持快速检测与一键切换。 |
+| **流量规则** | 我的规则、应用规则、AI 服务、常用服务、其他流量五层，直连 / 代理 / 拦截三种动作；改完热生效，不用断开连接。 |
+| **连接记录** | 逐条记录时间、应用、目标、连接方式与命中依据；可搜索筛选、导出 CSV，并设置保留天数。 |
 
 ---
 
@@ -59,7 +59,7 @@
 | **是不是 Electron 套壳，用起来很卡？** | 不是。界面是原生 SwiftUI，启动快、内存占用低，没有内嵌浏览器内核。 |
 | **内核靠谱吗？会不会影响订阅兼容？** | 用的是 mihomo（Clash Meta），与主流客户端同一套内核，现有 ClashMeta / Mihomo 订阅可以直接导入。 |
 | **会不会装驱动、要 root 权限？** | 不需要 root。虚拟网卡走 macOS 自带的系统扩展（`NEPacketTunnelProvider`），在「系统设置 → 登录项与扩展」里可见、可随时关闭。 |
-| **下载的安装包安全吗？** | 用 Developer ID 签名并通过 Apple 公证，带安全时间戳；自动更新还做了 EdDSA 签名校验，被篡改的包会被拒绝安装。 |
+| **下载的安装包安全吗？** | 安装包已通过 Apple 公证；自动更新会校验来源，异常包不会被安装。 |
 
 ## 开始使用
 
