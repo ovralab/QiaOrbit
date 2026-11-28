@@ -23,10 +23,6 @@ macOS 14 或更高版本 · Apple 芯片 · [English](README.md)
 | 下载大小 | v1.0.1 DMG 约 78 MB |
 | 签名与公证 | Developer ID 签名，Apple 公证 |
 
-## 查看实际连接走向
-
-[![连接记录展示直连、代理和命中的规则](assets/screenshots/history-zh-CN.png)](assets/screenshots/history-zh-CN.png)
-
 ## 安装与使用
 
 1. 打开 DMG，将 QiaOrbit 拖入「应用程序」。
