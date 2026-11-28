@@ -1,4 +1,4 @@
-# <img src="assets/icon.png" height="44" align="middle" alt="">&nbsp; <img src="assets/wordmark.png" height="44" align="middle" alt="QiaOrbit">
+# <img src="assets/icon.png" height="44" align="middle" alt="">&nbsp; <img src="assets/wordmark.png" height="40" align="middle" alt="QiaOrbit">
 
 **原生 macOS 代理与分流客户端**
 
