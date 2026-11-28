@@ -52,16 +52,14 @@
 
 ---
 
-## 技术实现
+## 为什么可以放心用
 
-| 层 | 实现 |
+| 你可能担心 | 实际情况 |
 |---|---|
-| **界面** | SwiftUI，macOS 14+，浅色设计系统，尺寸与颜色统一走 token |
-| **内核** | mihomo（Clash Meta）：虚拟网卡模式下进程内嵌；系统代理模式下作为受管子进程运行 |
-| **隧道** | `NEPacketTunnelProvider` 系统扩展，数据包通过 C ABI 交给内核 |
-| **签名** | Developer ID + Hardened Runtime + 安全时间戳，Apple 公证，Sparkle EdDSA 更新校验 |
-
----
+| **是不是 Electron 套壳，用起来很卡？** | 不是。界面是原生 SwiftUI，启动快、内存占用低，没有内嵌浏览器内核。 |
+| **内核靠谱吗？会不会影响订阅兼容？** | 用的是 mihomo（Clash Meta），与主流客户端同一套内核，现有 ClashMeta / Mihomo 订阅可以直接导入。 |
+| **会不会装驱动、要 root 权限？** | 不需要 root。虚拟网卡走 macOS 自带的系统扩展（`NEPacketTunnelProvider`），在「系统设置 → 登录项与扩展」里可见、可随时关闭。 |
+| **下载的安装包安全吗？** | 用 Developer ID 签名并通过 Apple 公证，带安全时间戳；自动更新还做了 EdDSA 签名校验，被篡改的包会被拒绝安装。 |
 
 ## 开始使用
 
