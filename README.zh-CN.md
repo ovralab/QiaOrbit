@@ -4,7 +4,7 @@
 
 导入配置，按网站或应用设置分流，并查看每条连接的实际走向。
 
-<a href="https://github.com/ovralab/QiaOrbit/releases/latest/download/QiaOrbit-1.0.1.dmg"><img src="assets/buttons/download-zh.png" width="182" height="36" alt="下载 macOS 版"></a>&nbsp; <a href="https://minovra.app/zh-CN/products/qiaorbit"><img src="assets/buttons/website-zh.png" width="146" height="36" alt="官方网站"></a>
+<a href="https://github.com/ovralab/QiaOrbit/releases/latest/download/QiaOrbit.dmg"><img src="assets/buttons/download-zh.png" width="182" height="36" alt="下载 macOS 版"></a>&nbsp; <a href="https://minovra.app/zh-CN/products/qiaorbit"><img src="assets/buttons/website-zh.png" width="146" height="36" alt="官方网站"></a>
 
 macOS 14+ · Apple 芯片&nbsp; <sup><a href="https://github.com/ovralab/QiaOrbit/releases/latest"><img src="https://img.shields.io/github/v/release/ovralab/QiaOrbit?label=%E5%BD%93%E5%89%8D%E7%89%88%E6%9C%AC&amp;labelColor=0066FF&amp;color=FFFFFF&amp;style=flat" height="20" align="middle" alt="当前正式版本"></a></sup>&nbsp; · [English](README.md)
 

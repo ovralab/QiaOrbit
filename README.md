@@ -4,7 +4,7 @@
 
 Import a configuration, route by website or app, and see where each connection actually went.
 
-<a href="https://github.com/ovralab/QiaOrbit/releases/latest/download/QiaOrbit-1.0.1.dmg"><img src="assets/buttons/download-en.png" width="200" height="36" alt="Download for macOS"></a>&nbsp; <a href="https://minovra.app/products/qiaorbit"><img src="assets/buttons/website-en.png" width="180" height="36" alt="Official website"></a>
+<a href="https://github.com/ovralab/QiaOrbit/releases/latest/download/QiaOrbit.dmg"><img src="assets/buttons/download-en.png" width="200" height="36" alt="Download for macOS"></a>&nbsp; <a href="https://minovra.app/products/qiaorbit"><img src="assets/buttons/website-en.png" width="180" height="36" alt="Official website"></a>
 
 macOS 14+ · Apple silicon&nbsp; <sup><a href="https://github.com/ovralab/QiaOrbit/releases/latest"><img src="https://img.shields.io/github/v/release/ovralab/QiaOrbit?label=Version&amp;labelColor=0066FF&amp;color=white&amp;style=plastic" height="20" align="middle" alt="Current release"></a></sup>&nbsp; · <a href="README.zh-CN.md"><img src="assets/lang-zh.png" height="26" align="middle" alt="简体中文"></a>
 
