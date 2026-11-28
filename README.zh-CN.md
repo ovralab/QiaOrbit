@@ -1,4 +1,4 @@
-<h1><img src="assets/lockup.png" width="187" height="48" alt="QiaOrbit"></h1>
+<h1><img src="assets/lockup.png" width="190" height="55" alt="QiaOrbit"></h1>
 
 ### 连接更简单，流量有去向。
 
