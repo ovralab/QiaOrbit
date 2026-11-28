@@ -1,4 +1,4 @@
-# <img src="assets/icon.png" height="44" align="middle" alt="">&nbsp; <img src="assets/wordmark.png" height="44" align="middle" alt="QiaOrbit">
+# <img src="assets/icon.png" height="44" align="middle" alt="">&nbsp; <img src="assets/wordmark.png" height="36" align="middle" alt="QiaOrbit">
 
 **Native macOS proxy and routing client**
 
