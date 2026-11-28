@@ -4,7 +4,7 @@
 
 为 macOS 打造的原生代理客户端，把配置、分流和诊断放进同一个窗口。
 
-<a href="https://github.com/ovralab/QiaOrbit/releases/latest"><img src="assets/buttons/download-zh.png" width="176" height="36" alt="下载 macOS 版"></a>&nbsp; <a href="https://minovra.app/products/qiaorbit"><img src="assets/buttons/website-zh.png" width="150" height="36" alt="官方网站"></a>
+<a href="https://github.com/ovralab/QiaOrbit/releases/latest"><img src="assets/buttons/download-zh.png" width="178" height="36" alt="下载 macOS 版"></a>&nbsp; <a href="https://minovra.app/products/qiaorbit"><img src="assets/buttons/website-zh.png" width="130" height="36" alt="官方网站"></a>
 
 <p>
   <img src="https://img.shields.io/badge/macOS-14%2B-0066FF" alt="macOS 14+">
