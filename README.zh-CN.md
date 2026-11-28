@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/Apple-公证-2EA44F" alt="Notarized">
 </p>
 
-<a href="https://github.com/ovralab/QiaOrbit/releases/latest"><img src="https://img.shields.io/github/v/release/ovralab/QiaOrbit?label=%E6%9C%80%E6%96%B0%E7%89%88&color=0066FF" alt="最新版"></a>&nbsp;<a href="README.md"><img src="assets/lang-en.png?v=2" height="22" align="middle" alt="English"></a>
+<a href="https://github.com/ovralab/QiaOrbit/releases/latest"><img src="https://img.shields.io/github/v/release/ovralab/QiaOrbit?label=%E6%9C%80%E6%96%B0%E7%89%88&color=0066FF" alt="最新版"></a>&nbsp;<a href="README.md"><img src="assets/lang-en.png?v=3" height="26" align="middle" alt="English"></a>
 
 <img src="assets/screenshots/dashboard.png" width="820" alt="控制台：连接状态、实时速率、网络诊断与分流策略">
 
