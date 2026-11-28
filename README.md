@@ -1,31 +1,35 @@
 # QiaOrbit
 
-**Decide how your Mac’s traffic is routed. See what happens to each connection.**
+**Route traffic on your Mac. See where each connection went.**
 
-QiaOrbit brings proxy profiles, traffic rules, and connection diagnostics into one macOS app. Import your own configuration, choose a node, and see which rules matched when you need to troubleshoot a connection.
+QiaOrbit brings profile management, routing rules, and connection diagnostics into one macOS app.
 
-[Download for Apple Silicon](https://github.com/ovralab/QiaOrbit/releases/latest) · [Product page](https://minovra.app/products/qiaorbit) · [简体中文](README.zh-CN.md)
+[![Download for macOS](https://img.shields.io/badge/Download%20for%20macOS-0059C7?style=for-the-badge)](https://github.com/ovralab/QiaOrbit/releases/latest)
+[![Official website](https://img.shields.io/badge/Official%20website-384657?style=for-the-badge)](https://minovra.app/products/qiaorbit)
 
-Requires macOS 14 or later.
+macOS 14 or later · Apple silicon | [简体中文](README.zh-CN.md)
 
-## The dashboard
+![QiaOrbit dashboard with node selection, traffic, and network diagnostics](assets/screenshots/dashboard.png)
 
-![QiaOrbit dashboard with connection controls, network diagnostics, and subscription usage](assets/screenshots/dashboard.png)
+## See what your rules did
 
-From the dashboard, you can switch nodes, check your outbound IP and traffic rates, and see whether DNS, the selected node, and the proxy service are working.
+Open Connection History to see whether traffic went direct, used a proxy, or was blocked, along with the rule that matched.
 
-## From profile to connection
+[![Connection History showing direct and proxy traffic and the rules that matched](assets/screenshots/history-en.png)](assets/screenshots/history-en.png)
 
-1. **Add a profile.** Open the DMG, drag QiaOrbit into Applications, and import a ClashMeta / Mihomo subscription or a local configuration file.
-2. **Choose what to route.** Use System Proxy for apps that follow macOS proxy settings. To route system traffic with the virtual network interface (TUN), enable it and approve the network extension when prompted.
-3. **Choose where traffic goes.** Use Smart Routing to apply built-in and custom rules for domains, IP addresses, or apps. Switch to Global Proxy or Direct when you want a single policy.
+**Configure routing**
+Import a ClashMeta / Mihomo subscription or a local profile. Set rules for domains, IP addresses, or apps.
 
-## When a connection isn’t working
+**Choose how to connect**
+Use System Proxy for apps that follow macOS proxy settings, or enable the virtual network interface (TUN) for system traffic.
 
-Compare node latency and stability, check the network diagnostics, or open Connection History to see which rule matched. The dashboard also shows traffic rule counts and subscription usage when available.
+**Compare nodes**
+Compare latency and stability, then check DNS and node connectivity from the dashboard.
 
-<a href="assets/screenshots/history-en.png"><img src="assets/screenshots/history-en.png" width="620" alt="QiaOrbit History showing connection methods and matched rules"></a>
+## Get started
 
-QiaOrbit is a commercial app. You supply your own profiles, proxy nodes, or subscriptions.
+1. Download the DMG and drag QiaOrbit into Applications.
+2. Open QiaOrbit, import a profile, and select a node.
+3. If you enable TUN, approve the network extension when macOS prompts you.
 
-[Contact Minovra support](mailto:support@minovra.app) for help or feedback. Include your macOS and QiaOrbit versions and a brief description of the issue.
+QiaOrbit is a commercial app. Bring your own profiles, nodes, or subscriptions. [Contact support](mailto:support@minovra.app).
