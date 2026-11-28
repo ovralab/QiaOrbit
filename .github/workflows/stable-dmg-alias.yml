@@ -1,0 +1,61 @@
+name: Stable download alias
+
+# 发版时把当次 DMG 复制一份固定文件名 QiaOrbit.dmg，
+# 让 README 的下载按钮永久指向 releases/latest/download/QiaOrbit.dmg
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  alias:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mirror release DMG as QiaOrbit.dmg
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const release = context.payload.release
+              ?? (await github.rest.repos.getLatestRelease({ owner, repo })).data;
+
+            const dmg = release.assets.find(a => a.name.toLowerCase().endsWith('.dmg'));
+            if (!dmg) {
+              core.warning('No .dmg asset found in this release.');
+              return;
+            }
+
+            // 已存在同名别名资源时先删掉，保证手动重跑也不会冲突
+            const existing = release.assets.find(a => a.name === 'QiaOrbit.dmg');
+            if (existing) {
+              core.info('Removing existing QiaOrbit.dmg');
+              await github.rest.repos.deleteReleaseAsset({
+                owner, repo, asset_id: existing.id
+              });
+            }
+
+            if (dmg.name === 'QiaOrbit.dmg') {
+              core.info('Only QiaOrbit.dmg exists; re-uploading it as-is.');
+            }
+
+            core.info(`Mirroring ${dmg.name} (${dmg.size} bytes) as QiaOrbit.dmg`);
+            const res = await fetch(dmg.browser_download_url);
+            if (!res.ok) throw new Error(`Download failed: ${res.status}`);
+            const buf = Buffer.from(await res.arrayBuffer());
+
+            await github.rest.repos.uploadReleaseAsset({
+              owner, repo,
+              release_id: release.id,
+              name: 'QiaOrbit.dmg',
+              data: buf,
+              headers: {
+                'content-type': 'application/octet-stream',
+                'content-length': buf.length
+              }
+            });
+            core.info('Uploaded QiaOrbit.dmg');
