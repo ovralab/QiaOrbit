@@ -1,4 +1,4 @@
-# <img src="assets/icon.png" width="30" height="30" alt=""> QiaOrbit
+# <img src="assets/icon.png" width="35" height="35" alt=""> QiaOrbit
 
 **原生 macOS 代理与分流客户端。**
 
